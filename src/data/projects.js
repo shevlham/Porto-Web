@@ -1,0 +1,42 @@
+// Problem / solution copy is draft wording — edit freely. Results are placeholders on purpose.
+export const projects = [
+  {
+    id: 'pseudocode', no: '01',
+    title: ['Automated', 'Pseudocode', 'Correction System'],
+    short: 'OCR and structure recognition for handwritten pseudocode.',
+    tech: ['Python', 'OCR', 'Computer Vision'],
+    type: 'AI / Research', status: 'Ongoing', tone: 'navy',
+    className: 'lg:col-span-8', aspect: 'aspect-[16/10]',
+    problem: 'Handwritten pseudocode from student exercises is traditionally checked manually, while the text needs to be digitized before it can be automatically processed and evaluated.',
+    solution: 'Developed the OCR pipeline to scan handwritten pseudocode, detect and recognize its text, and reconstruct code indentation based on the spatial coordinates of each recognized element.',
+    result: 'Converting handwritten pseudocode into structured, machine-readable pseudocode as the foundation for automated execution and correction.',
+    image: 'https://res.cloudinary.com/df7jtyyxr/image/upload/v1790679866/OCR_wl4eh8.png',
+    github: 'https://github.com/shevlham/HCRForPseudocode',
+  },
+  {
+    id: 'teleat', no: '02',
+    title: ['TelEat'],
+    short: 'Food ordering web application.',
+    tech: ['React', 'Laravel', 'MySQL'],
+    type: 'Web Application', status: null, tone: 'mustard',
+    className: 'lg:col-span-5 lg:col-start-8 lg:mt-32', aspect: 'aspect-[4/5]',
+    problem: 'Students have to visit multiple campus food stalls to check menus, prices, and availability, with no way to order directly from their tables.',
+    solution: 'A web application that allows students to browse menus, check prices and availability, and order food directly from their tables across multiple Telkom University food stalls.',
+    result: '[ Results and metrics — to be added ]',
+    image: 'https://res.cloudinary.com/df7jtyyxr/image/upload/v1790668472/web_w2terx.jpg',
+    github: 'https://github.com/shevlham/TelEat_TubesIMPAL',
+  },
+  {
+    id: 'agents', no: '03',
+    title: ['NusaCode'],
+    short: 'Independent pseudocode interpreter for running pseudocode directly.',
+    tech: ['Python', 'Interpreter', 'OCR', 'AI Agent'],
+    type: 'Interpreter', tone: 'sky',
+    className: 'lg:col-span-6 lg:col-start-2 lg:-mt-16', aspect: 'aspect-[4/3]',
+    problem: 'Pseudocode cannot be executed directly, requiring it to be converted into another programming language before it can be tested or run.',
+    solution: 'An independent pseudocode interpreter that executes pseudocode directly, extending the OCR pipeline to turn handwritten pseudocode into executable programs.',
+    result: 'Currently developing an agentic workflow that can scan pseudocode from a phone and automatically interpret and run it.',
+    image: 'https://res.cloudinary.com/df7jtyyxr/image/upload/v1790670256/logo_nusa_code_2_w01lme.jpg',
+    github: 'https://github.com/shevlham/Nusacode'
+  },
+]

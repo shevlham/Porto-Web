@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ivory: #f3eee2;
+  --color-ink: #121214;
+  --color-navy: #14213d;
+  --color-mustard: #e3b93c;
+  --color-sky: #9db9d8;
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+html { scroll-behavior: smooth; background: var(--color-ivory); }
+body { background: var(--color-ivory); color: var(--color-ink); overflow-x: clip; -webkit-font-smoothing: antialiased; }
+section[id] { scroll-margin-top: 4rem; }
+:focus-visible { outline: 2px solid var(--color-navy); outline-offset: 3px; }
+.on-dark :focus-visible { outline-color: var(--color-mustard); }
+
+@keyframes marquee { to { transform: translateX(-50%); } }
+.marquee-track { animation: marquee 45s linear infinite; }
+.marquee:hover .marquee-track { animation-play-state: paused; }
+
+.has-cursor, .has-cursor a, .has-cursor button, .has-cursor [role="button"] { cursor: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .marquee-track { animation: none; }
+}

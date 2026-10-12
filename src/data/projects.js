@@ -10,7 +10,7 @@ export const projects = [
     problem: 'Handwritten pseudocode from student exercises is traditionally checked manually, while the text needs to be digitized before it can be automatically processed and evaluated.',
     solution: 'Developed the OCR pipeline to scan handwritten pseudocode, detect and recognize its text, and reconstruct code indentation based on the spatial coordinates of each recognized element.',
     result: 'Converting handwritten pseudocode into structured, machine-readable pseudocode as the foundation for automated execution and correction.',
-    image: 'https://res.cloudinary.com/df7jtyyxr/image/upload/v1791831878/Screenshot_2026-10-13_020339_nnxmjz.png',
+    image: 'https://res.cloudinary.com/df7jtyyxr/image/upload/v1791832499/Screenshot_2026-10-13_021432_fymtrv.png',
     github: 'https://github.com/shevlham/HCRForPseudocode',
   },
   {

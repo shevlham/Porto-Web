@@ -20,7 +20,6 @@ export default function App() {
       <Navbar />
       <main id="main">
         <Hero />
-        <Marquee />
         <FeaturedProjects />
         <Experience />
         <CurrentlyExploring />
